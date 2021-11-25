@@ -59,14 +59,15 @@ console.log( 'testing isPositive with -3 - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 let zorp = [1, 2, 3, 4, 10]
+let zeep = [7, 12, 69]
 
 function getLast(array) {
-  let i = zorp.length - 1;
-  let last = zorp[i];
+  let i = array.length - 1;
+  let last = array[i];
   return last;
 }
 console.log('testing getArray, should be 10', getLast(zorp));
-
+console.log('testing getArray again, should be 69', getLast(zeep));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
